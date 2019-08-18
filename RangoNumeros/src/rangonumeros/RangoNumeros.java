@@ -8,6 +8,7 @@ package rangonumeros;
 /**
  *
  * @author duvan
+ * @author ivan camilo
  */
 public class RangoNumeros {
 

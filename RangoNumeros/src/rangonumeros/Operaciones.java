@@ -9,16 +9,27 @@ import static java.lang.System.out;
 import java.util.Scanner;
 
 /**
- *
+ * Clase encargada de calcular los numeros faltantes en la secuencia
  * @author duvan
+ * @author ivan camilo
  */
 public class Operaciones {
-
+    
+    /**
+     * Variable que se usa en todos los metodos de esta clase como contador
+     */
     int contador;
+    /**
+     * Constructor de la clase
+     */
     public Operaciones() {
         Ingresar();
     }
-    
+    /**
+     * Funcion en la cual pedimos los numeros y los guardamos en un vector 
+     * y llamamos al siguiente metodo Determindar
+     *  
+     */
     
     public void Ingresar (){
 
@@ -37,6 +48,12 @@ public class Operaciones {
         Determinar(lista);
         
     }
+    /**
+     * Funcion en la cual determinamos el numero mayor y el menor de el vector
+     * y llamamos al siguiente metodo faltantes     * 
+     * @param lista
+     *  
+     */
     public void Determinar(int [] lista){
         int menor=9999;
         int mayor=-9999;
@@ -50,6 +67,14 @@ public class Operaciones {
         }
         Faltantes(lista, mayor, menor);
     }
+    /**
+     * Funcion en la cual determinamos cuales son los numeros faltantes en el vector
+     * y los imprimimos     * 
+     * @param lista
+     * @param mayor
+     * @param menor
+     *  
+     */
     public void Faltantes(int [] lista,int mayor,int menor){
         int recorrido= menor;
         int encontro=0;
